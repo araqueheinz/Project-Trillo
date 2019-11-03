@@ -31,6 +31,7 @@ Trillo is a fictional all in one booking app. The idea is that an user can book 
 ```
 
 ### Resources
+- https://icomoon.io/
 
 
 ## Check it out
