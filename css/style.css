@@ -51,13 +51,13 @@ body {
    //             * SEARCH BOX *                //
   /////////////////////////////////////////////// */
 .search {
-  /*
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 40%;
-   --- or */
-  flex: 0 0 40%;
   display: flex;
+  /*
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 40%;
+ --- or */
+  flex: 0 0 40%;
   align-items: center;
   justify-content: center; }
   .search__input {
@@ -132,6 +132,22 @@ body {
     margin-right: 1rem; }
 
 /*  ///////////////////////////////////////////////
+   //              * SIDE NAV *                 //
+  /////////////////////////////////////////////// */
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem; }
+
+/*  ///////////////////////////////////////////////
+   //            * LEGAL TEXT *                 //
+  /////////////////////////////////////////////// */
+.legal {
+  font-size: 1rem;
+  color: var(--color-grey-light-4);
+  text-align: center;
+  padding: 2.5rem; }
+
+/*  ///////////////////////////////////////////////
    //             * _Layout *                   //
   /////////////////////////////////////////////// */
 .container {
@@ -159,10 +175,15 @@ body {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 18%;
-   --- or */
-  flex: 0 0 18%; }
+   --- or 
+  */
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .hotel-view {
   background-color: #fff;
   background-color: orangered;
+  height: 80rem;
   flex: 1; }
