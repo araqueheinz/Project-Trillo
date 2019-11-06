@@ -53,7 +53,6 @@
     font-weight: 100;
     color: var(--color-grey-light-4)
     }
-
   }
 
   
@@ -118,8 +117,6 @@
       height: 2rem;
       width: 2rem;
       fill: var(--color-grey-dark-2);
-      
-      
     }
 
     &__notification {
@@ -212,10 +209,28 @@
    //            * LEGAL TEXT *                 //
   /////////////////////////////////////////////// */
 .legal {
+  position: relative;
   font-size: 1rem;
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+  
+
+  &__link:link, 
+  &__link:visited,
+  &__link:active {
+    color: var(--color-primary);
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: all 0.4s;
+  } 
+
+  &__link:hover {
+    border-bottom: 1px solid var(--color-primary);
+    cursor: pointer;
+  }
+
 }
 
 /*  ///////////////////////////////////////////////
@@ -235,13 +250,20 @@
   /////////////////////////////////////////////// */
 .overview {
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2);
   
   &__heading {
-
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 1.5rem 3rem;
   }
 
   &__stars {
     margin-right: auto;
+    display: flex;
   }
 
   &__icon-star,
@@ -252,21 +274,79 @@
   } 
 
   &__location {
-    
+    font-size: 1.2rem;
+    display: flex;
+    vertical-align: center;
+  }
+
+  &__icon-location {
+    margin-right: 0.5rem;
   }
 
   &__rating {
+    background-color: var(--color-primary);
+    color: #fff;
+    margin-left: 3rem;
+    padding: 0 2.25rem;
+    align-self: stretch;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  &__average-ratign {
-
+  &__rating-average {
+    font-size: 2.25rem;
+    font-weight: 200;
+    margin-bottom: -0.3rem;
   }
 
   &__rating-count {
-    
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    flex: 1;
+
+  }
+}
+
+/*  ///////////////////////////////////////////////
+   //           * BUTTON INLINE *               //
+  /////////////////////////////////////////////// */
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--color-grey-dark-1);
   }
 
+  &:focus {
+    outline: none;
+    animation: pulsate 0.5s infinite;
+  }
+}
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
 
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
 }
