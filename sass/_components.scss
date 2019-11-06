@@ -10,7 +10,6 @@
 /*  ///////////////////////////////////////////////
    //             * SEARCH BOX *                //
   /////////////////////////////////////////////// */
-
 .search {
   // background-color: yellow;
 
@@ -151,7 +150,6 @@
 /*  ///////////////////////////////////////////////
    //              * SIDE NAV *                 //
   /////////////////////////////////////////////// */
-
 .side-nav {
   font-size: 1.4rem;
   list-style: none;
@@ -213,10 +211,62 @@
 /*  ///////////////////////////////////////////////
    //            * LEGAL TEXT *                 //
   /////////////////////////////////////////////// */
-
 .legal {
   font-size: 1rem;
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+}
+
+/*  ///////////////////////////////////////////////
+   //              * GALLERY *                  //
+  /////////////////////////////////////////////// */
+.gallery {
+  display: flex;
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+/*  ///////////////////////////////////////////////
+   //          * HOTEL OVERVIEW *               //
+  /////////////////////////////////////////////// */
+.overview {
+  display: flex;
+  
+  &__heading {
+
+  }
+
+  &__stars {
+    margin-right: auto;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  } 
+
+  &__location {
+    
+  }
+
+  &__rating {
+
+  }
+
+  &__average-ratign {
+
+  }
+
+  &__rating-count {
+    
+  }
+
+
+
 }
